@@ -77,14 +77,14 @@ app.get("/api/pickup", (req, res, next) => {
     "Note":"Wash Properly",
     "Services":[
       {
-        "service_id":"1",
+        "service_id":1,
         "service_name":"Wash & Fold",
         "service_image":"http://dev.geeksroot.com/washup_images/Wash%20and%20Fold.png",
         "service_link":"api/pickup/washfold",
         "service_selected":true
       },
       {
-        "service_id":"2",
+        "service_id":2,
         "service_name":"Wash & Iron",
         "service_image":"http://dev.geeksroot.com/washup_images/Wash%20and%20Iron.png",
         "service_link":"api/pickup/washiron",
@@ -92,21 +92,21 @@ app.get("/api/pickup", (req, res, next) => {
       }
       ,
       {
-        "service_id":"3",
+        "service_id":3,
         "service_name":"Iron Only",
         "service_image":"http://dev.geeksroot.com/washup_images/Iron%20Only.png",
         "service_link":"api/pickup/irononly",
         "service_selected":true
       },
       {
-        "service_id":"4",
+        "service_id":4,
         "service_name":"Iron & Hanger",
         "service_image":"http://dev.geeksroot.com/washup_images/Iron%20and%20Hanger.png",
         "service_link":"api/pickup/ironhanger",
         "service_selected":false
       },
       {
-        "service_id":"5",
+        "service_id":5,
         "service_name":"Wash, Iron & Hanger",
         "service_image":"http://dev.geeksroot.com/washup_images/Wash%20Iron%20&.png",
         "service_link":"api/pickup/washironhanger",
@@ -114,7 +114,7 @@ app.get("/api/pickup", (req, res, next) => {
       }
       ,
       {
-        "service_id":"6",
+        "service_id":6,
         "service_name":"Dry Cleaning",
         "service_image":"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
         "service_link":"api/pickup/drycleaning",
@@ -123,14 +123,14 @@ app.get("/api/pickup", (req, res, next) => {
     ],
     "services_selected":[
       {
-        "service_id":"1",
+        "service_id":1,
         "service_name":"Wash & Fold",
         "pieces":"3",
         "KG":"1",
         "price":"700"
       },
       {
-        "service_id":"3",
+        "service_id":3,
         "service_name":"Iron Only",
         "pieces":"4",
         "KG":"2",
@@ -151,7 +151,7 @@ app.get("/api/pickup/washfold", (req, res, next) => {
   res.send(
     [
         {
-          id:"4",
+          id:4,
           title: "Shirt",
 	  quantity:"5",
           addons: [
@@ -169,7 +169,7 @@ app.get("/api/pickup/washfold", (req, res, next) => {
 
         },
         {
-          id:"3",
+          id:3,
           title: "Pent",
 	  quantity:"4",
           addons: [
@@ -187,7 +187,7 @@ app.get("/api/pickup/washfold", (req, res, next) => {
         },
         
         {
-          id:"1",
+          id:1,
           title: "Cap",
 	  quantity:"0",
           addons: [
@@ -205,7 +205,7 @@ app.get("/api/pickup/washfold", (req, res, next) => {
           
         },
         {
-          id:"9",
+          id:9,
           title: "Kurta",
 	  quantity:"0",
           addons: [
@@ -231,7 +231,7 @@ app.get("/api/pickup/washiron", (req, res, next) => {
   res.send(
     [
         {
-          id:"4",
+          id:4,
           title: "Shirt",
 	  quantity:"2",
           addons: [
@@ -249,7 +249,7 @@ app.get("/api/pickup/washiron", (req, res, next) => {
 
         },
         {
-          id:"3",
+          id:3,
           title: "Pent",
 	  quantity:"3",
           addons: [
@@ -267,7 +267,7 @@ app.get("/api/pickup/washiron", (req, res, next) => {
         },
         
         {
-          id:"1",
+          id:5,
           title: "Cap",
 	  quantity:"0",
           addons: [
@@ -285,7 +285,7 @@ app.get("/api/pickup/washiron", (req, res, next) => {
           
         },
         {
-          id:"9",
+          id:9,
           title: "Kurta",
 	  quantity:"0",
           addons: [
@@ -311,7 +311,7 @@ app.get("/api/pickup/irononly", (req, res, next) => {
   res.send(
     [
         {
-          id:"1",
+          id:1,
           title: "Shirt",
 	        quantity:"5",
           addons: [
@@ -329,7 +329,7 @@ app.get("/api/pickup/irononly", (req, res, next) => {
 
         },
         {
-          id:"3",
+          id:3,
           title: "Pent",
 	  quantity:"5",
           addons: [
@@ -347,7 +347,7 @@ app.get("/api/pickup/irononly", (req, res, next) => {
         },
         
         {
-          id:"1",
+          id:5,
           title: "Cap",
 	  quantity:"0",
           addons: [
@@ -365,7 +365,7 @@ app.get("/api/pickup/irononly", (req, res, next) => {
           
         },
         {
-          id:"9",
+          id:9,
           title: "Kurta",
 	  quantity:"0",
           addons: [
@@ -392,7 +392,7 @@ app.get("/api/pickup/ironhanger", (req, res, next) => {
   res.send(
     [
         {
-          id:"4",
+          id:4,
           title: "Shirt",
 	  quantity:"0",
           addons: [
@@ -410,7 +410,7 @@ app.get("/api/pickup/ironhanger", (req, res, next) => {
 
         },
         {
-          id:"3",
+          id:3,
           title: "Pent",
 	  quantity:"0",
           addons: [
@@ -428,7 +428,7 @@ app.get("/api/pickup/ironhanger", (req, res, next) => {
         },
         
         {
-          id:"1",
+          id:5,
           title: "Cap",
 	  quantity:"0",
           addons: [
@@ -446,7 +446,7 @@ app.get("/api/pickup/ironhanger", (req, res, next) => {
           
         },
         {
-          id:"9",
+          id:9,
           title: "Kurta",
 	  quantity:"0",
           addons: [
@@ -473,7 +473,7 @@ app.get("/api/pickup/washironhanger", (req, res, next) => {
   res.send(
     [
         {
-          id:"4",
+          id:4,
           title: "Shirt",
 	  quantity:"0",
           addons: [
@@ -491,7 +491,7 @@ app.get("/api/pickup/washironhanger", (req, res, next) => {
 
         },
         {
-          id:"3",
+          id:3,
           title: "Pent",
 	  quantity:"4",
           addons: [
@@ -509,7 +509,7 @@ app.get("/api/pickup/washironhanger", (req, res, next) => {
         },
         
         {
-          id:"1",
+          id:5,
           title: "Cap",
 	  quantity:"7",
           addons: [
@@ -527,7 +527,7 @@ app.get("/api/pickup/washironhanger", (req, res, next) => {
           
         },
         {
-          id:"9",
+          id:9,
           title: "Kurta",
 	  quantity:"0",
           addons: [
@@ -554,7 +554,7 @@ app.get("/api/pickup/drycleaning", (req, res, next) => {
   res.send(
     [
         {
-          id:"4",
+          id:4,
           title: "Shirt",
 	  quantity:"1",
           addons: [
@@ -572,7 +572,7 @@ app.get("/api/pickup/drycleaning", (req, res, next) => {
 
         },
         {
-          id:"3",
+          id:3,
           title: "Pent",
 	  quantity:"4",
           addons: [
@@ -590,7 +590,7 @@ app.get("/api/pickup/drycleaning", (req, res, next) => {
         },
         
         {
-          id:"1",
+          id:5,
           title: "Cap",
 	  quantity:"6",
           addons: [
@@ -608,7 +608,7 @@ app.get("/api/pickup/drycleaning", (req, res, next) => {
           
         },
         {
-          id:"9",
+          id:9,
           title: "Kurta",
 	  quantity:"0",
           addons: [
@@ -635,21 +635,21 @@ app.get("/api/dropoff", (req, res, next) => {
     "order_name":"ORA2011-667-Raazia Jaffery",
     "Services":[
       {
-        "service_id":"1",
+        "service_id":1,
         "service_name":"Wash & Fold",
         "service_item":"3/pieces",
         "service_weight":"0.60/KG",
         "service_price":"500 Rs."
       },
       {
-        "service_id":"2",
+        "service_id":2,
         "service_name":"Wash & Iron",
         "service_item":"3/pieces",
         "service_weight":"0.60/KG",
         "service_price":"500 Rs."
       },
       {
-        "service_id":"3",
+        "service_id":3,
         "service_name":"Iron Only",
         "service_item":"3/pieces",
         "service_weight":"0.60/KG",
@@ -662,12 +662,12 @@ app.get("/api/dropoff", (req, res, next) => {
     "polybag":"2/pieces",
     "polybag_items":[
       {
-        "polybag_id":"1",
+        "polybag_id":1,
         "polybag_name":"OR2011-667",
         "polybag_number":"1 of 2"
       },
       {
-        "polybag_id":"2",
+        "polybag_id":2,
         "polybag_name":"OR2011-667",
         "polybag_number":"2 of 2"
       }
