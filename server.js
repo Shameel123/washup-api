@@ -29,118 +29,112 @@ app.get("/", (req, res, next) => {
 app.get("/api/dashboard", (req, res, next) => {
   // console.log(req)
   res.json({
-    "totalLocationTarget":20,
-    "totalLocationAchieved":10,
-    "pickDropTarget":10,
-    "pickDropAchieved":5,
-    "pickTarget":5,
-    "pickAchieved":3,
-    "dropTarget":5,
-    "dropAchieved":2,
-    "onTimeTarget":20,
-    "onTimeAchieved":8,
-    "profilePic":"http://geeksroot.com/dev/washup_images/profilepic2.png",
-    "profileName":"Shameel"
-    
+    totalLocationTarget:20,
+    totalLocationAchieved:10,
+    pickDropTarget:10,
+    pickDropAchieved:5,
+    pickTarget:5,
+    pickAchieved:3,
+    dropTarget:5,
+    dropAchieved:2,
+    onTimeTarget:20,
+    onTimeAchieved:8,
+    profilePic:"http://geeksroot.com/dev/washup_images/profilepic2.png",
+    profileName:"Shameel"
   })
- 
-
 });
 
 
 app.get("/api/riderhistory", (req, res, next) => {
   // console.log(req)
   res.json({
-    
-      "dropAchieved": 100,
-      "dropTarget": 121,
-      "onTimeAchieved": 100,
-      "onTimeTarget": 130,
-      "pickAchieved": 90,
-      "pickDropAchieved": 111,
-      "pickDropTarget": 101,
-      "pickTarget": 102,
-      "totalLocationAchieved": 77,
-      "totalLocationTarget": 54,
-    
-    
+      dropAchieved: 100,
+      dropTarget: 121,
+      onTimeAchieved: 100,
+      onTimeTarget: 130,
+      pickAchieved: 90,
+      pickDropAchieved: 111,
+      pickDropTarget: 101,
+      pickTarget: 102,
+      totalLocationAchieved: 77,
+      totalLocationTarget: 54,
   })
 
 })
 
 app.get("/api/pickup", (req, res, next) => {
   res.json({
-    "order_id":"ORA2011-667",
-    "customer_name":"Raazia Jaffery",
-    "order":"ORA2011-667-Raazia Jaffery",
-    "PermenantNote":"Don't Ring Bell",
-    "Note":"Wash Properly",
-    "Services":[
+    order_id:"ORA2011-667",
+    customer_name:"Raazia Jaffery",
+    order:"ORA2011-667-Raazia Jaffery",
+    PermenantNot:"Don't Ring Bell",
+    Note:"Wash Properly",
+    Services:[
       {
-        "service_id":1,
-        "service_name":"Wash & Fold",
-        "service_image":"http://dev.geeksroot.com/washup_images/Wash%20and%20Fold.png",
-        "service_link":"api/pickup/washfold",
-        "service_selected":true
+        service_id:1,
+        service_name:"Wash & Fold",
+        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Fold.png",
+        service_link:"api/pickup/washfold",
+        service_selected:true
       },
       {
-        "service_id":2,
-        "service_name":"Wash & Iron",
-        "service_image":"http://dev.geeksroot.com/washup_images/Wash%20and%20Iron.png",
-        "service_link":"api/pickup/washiron",
-        "service_selected":false
+        service_id:2,
+        service_name:"Wash & Iron",
+        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Iron.png",
+        service_link:"api/pickup/washiron",
+        service_selected:false
       }
       ,
       {
-        "service_id":3,
-        "service_name":"Iron Only",
-        "service_image":"http://dev.geeksroot.com/washup_images/Iron%20Only.png",
-        "service_link":"api/pickup/irononly",
-        "service_selected":true
+        service_id:3,
+        service_name:"Iron Only",
+        service_image:"http://dev.geeksroot.com/washup_images/Iron%20Only.png",
+        service_link:"api/pickup/irononly",
+        service_selected:true
       },
       {
-        "service_id":4,
-        "service_name":"Iron & Hanger",
-        "service_image":"http://dev.geeksroot.com/washup_images/Iron%20and%20Hanger.png",
-        "service_link":"api/pickup/ironhanger",
-        "service_selected":false
+        service_id:4,
+        service_name:"Iron & Hanger",
+        service_image:"http://dev.geeksroot.com/washup_images/Iron%20and%20Hanger.png",
+        service_link:"api/pickup/ironhanger",
+        service_selected:false
       },
       {
-        "service_id":5,
-        "service_name":"Wash, Iron & Hanger",
-        "service_image":"http://dev.geeksroot.com/washup_images/Wash%20Iron%20&.png",
-        "service_link":"api/pickup/washironhanger",
-        "service_selected":false
+        service_id:5,
+        service_name:"Wash, Iron & Hanger",
+        service_image:"http://dev.geeksroot.com/washup_images/Wash%20Iron%20&.png",
+        service_link:"api/pickup/washironhanger",
+        service_selected:false
       }
       ,
       {
-        "service_id":6,
-        "service_name":"Dry Cleaning",
-        "service_image":"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
-        "service_link":"api/pickup/drycleaning",
-        "service_selected":false
+        service_id:6,
+        service_name:"Dry Cleaning",
+        service_image:"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
+        service_link:"api/pickup/drycleaning",
+        ":false
       }
     ],
-    "services_selected":[
+    services_selected:[
       {
-        "service_id":1,
-        "service_name":"Wash & Fold",
-        "pieces":"3",
-        "KG":"1",
-        "price":"700"
+        service_id:1,
+        service_name:"Wash & Fold",
+        pieces:"3",
+        KG:"1",
+        price:"700"
       },
       {
-        "service_id":3,
-        "service_name":"Iron Only",
-        "pieces":"4",
-        "KG":"2",
-        "price":"500"
+        service_id:3,
+        service_name:"Iron Only",
+        pieces:"4",
+        KG:"2",
+        price:"500"
       }
     ],
-    "grandtotal":{
-        "pieces":"3",
-        "KG":"1",
-        "price":"700"
+    grandtotal:{
+        pieces:"3",
+        KG:"1",
+        price:"700"
       }
   })
 });
@@ -631,48 +625,47 @@ app.get("/api/pickup/drycleaning", (req, res, next) => {
 
 app.get("/api/dropoff", (req, res, next) => {
   res.json({
-    "order_id":"1",
-    "order_name":"ORA2011-667-Raazia Jaffery",
-    "Services":[
+    order_id:"1",
+    order_name:"ORA2011-667-Raazia Jaffery",
+    Services:[
       {
-        "service_id":1,
-        "service_name":"Wash & Fold",
-        "service_item":"3/pieces",
-        "service_weight":"0.60/KG",
-        "service_price":"500 Rs."
+        service_id:1,
+        service_name:"Wash & Fold",
+        service_item:"3/pieces",
+        service_weight:"0.60/KG",
+        service_price:"500 Rs."
       },
       {
-        "service_id":2,
-        "service_name":"Wash & Iron",
-        "service_item":"3/pieces",
-        "service_weight":"0.60/KG",
-        "service_price":"500 Rs."
+        service_id:2,
+        service_name:"Wash & Iron",
+        service_item:"3/pieces",
+        service_weight:"0.60/KG",
+        service_price:"500 Rs."
       },
       {
-        "service_id":3,
-        "service_name":"Iron Only",
-        "service_item":"3/pieces",
-        "service_weight":"0.60/KG",
-        "service_price":"500 Rs."
+        service_id:3,
+        service_name:"Iron Only",
+        service_item:"3/pieces",
+        service_weight:"0.60/KG",
+        service_price:"500 Rs."
       },
     ],
-    "delivery_charges":"200",
-    "wallet":"50",
-    "total":"1450",
-    "polybag":"2/pieces",
-    "polybag_items":[
+    delivery_charges:"200",
+    wallet:"50",
+    total:"1450",
+    polybag:"2",
+    polybag_items:[
       {
-        "polybag_id":1,
-        "polybag_name":"OR2011-667",
-        "polybag_number":"1 of 2"
-      },
+        polybag_id:1,
+        polybag_name:"OR2011-667",
+        polybag_number:"1 of 2"
+      }
       {
-        "polybag_id":2,
-        "polybag_name":"OR2011-667",
-        "polybag_number":"2 of 2"
+        polybag_id:2,
+        polybag_name:"OR2011-667",
+        polybag_number:"2 of 2"
       }
     ]
-    
   })
 });
 
@@ -681,7 +674,7 @@ app.get("/api/myrides", (req, res, next) => {
   res.send(
     [
       {
-      id:"4",
+      order_id:"4",
       title: "OR2011-667-Raazia Jaffery",
       address:"Latifabad",
       rideTime:"10:00 AM",
@@ -692,7 +685,7 @@ app.get("/api/myrides", (req, res, next) => {
       buttonService:"Pickup"
     },
     {
-      id:"3",
+      order_id:"3",
       title: "OR2011-668-Shameel Uddin",
       address:"Latifabad",
       rideTime:"11:00 AM",
@@ -705,7 +698,7 @@ app.get("/api/myrides", (req, res, next) => {
     },
 
     {
-      id:"1",
+      order_id:"1",
       title: "OR2011-669-Babar",
       address:"Latifabad",
       rideTime:"12:00 pM",
@@ -716,12 +709,12 @@ app.get("/api/myrides", (req, res, next) => {
       buttonService:"Drop Off Pick Up",
       serviceQuantity:"5"
     },{
-      id:"0",
+      order_id:"0",
       title: "Drop Off Point",
       time:"11:30 AM"
     },
     {
-      id:"44",
+      order_id:"44",
       title: "OR2011-667-Fahad",
       address:"Latifabad",
       rideTime:"10:00 AM",
@@ -732,7 +725,7 @@ app.get("/api/myrides", (req, res, next) => {
       buttonService:"Pickup"
     },
     {
-      id:"2",
+      order_id:"2",
       title: "OR2011-661-Uziar",
       address:"Latifabad",
       rideTime:"1:00 PM",
