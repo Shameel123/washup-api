@@ -112,7 +112,7 @@ app.get("/api/pickup", (req, res, next) => {
         service_name:"Dry Cleaning",
         service_image:"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
         service_link:"api/pickup/drycleaning",
-        ":false
+        service_selected:false
       }
     ],
     services_selected:[
@@ -675,6 +675,8 @@ app.get("/api/myrides", (req, res, next) => {
     [
       {
       order_id:"4",
+      order_name:"OR2011-667",
+      customer_name:"Raazia Jaffery",
       title: "OR2011-667-Raazia Jaffery",
       address:"Latifabad",
       rideTime:"10:00 AM",
@@ -686,6 +688,8 @@ app.get("/api/myrides", (req, res, next) => {
     },
     {
       order_id:"3",
+      order_name:"OR2011-668",
+      customer_name:"Shameel Uddin",
       title: "OR2011-668-Shameel Uddin",
       address:"Latifabad",
       rideTime:"11:00 AM",
@@ -699,6 +703,8 @@ app.get("/api/myrides", (req, res, next) => {
 
     {
       order_id:"1",
+      order_name:"OR2011-669",
+      customer_name:"Babar",
       title: "OR2011-669-Babar",
       address:"Latifabad",
       rideTime:"12:00 pM",
@@ -715,6 +721,8 @@ app.get("/api/myrides", (req, res, next) => {
     },
     {
       order_id:"44",
+      order_name:"OR2011-667",
+      customer_name:"Fahad",
       title: "OR2011-667-Fahad",
       address:"Latifabad",
       rideTime:"10:00 AM",
@@ -726,7 +734,9 @@ app.get("/api/myrides", (req, res, next) => {
     },
     {
       order_id:"2",
-      title: "OR2011-661-Uziar",
+      order_name:"OR2011-661",
+      customer_name:"Uzair",
+      title: "OR2011-661-Uzair",
       address:"Latifabad",
       rideTime:"1:00 PM",
       permenantNote: "None",
