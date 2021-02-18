@@ -659,7 +659,7 @@ app.get("/api/dropoff", (req, res, next) => {
         polybag_id:1,
         polybag_name:"OR2011-667",
         polybag_number:"1 of 2"
-      }
+      },
       {
         polybag_id:2,
         polybag_name:"OR2011-667",
