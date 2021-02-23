@@ -27,7 +27,7 @@ app.get("/", (req, res, next) => {
 
 // Insert here other API endpoints
 app.get("/api/dashboard", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.json({
     totalLocationTarget:20,
     totalLocationAchieved:10,
@@ -46,7 +46,7 @@ app.get("/api/dashboard", (req, res, next) => {
 
 
 app.get("/api/riderhistory", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.json({
       dropAchieved: 100,
       dropTarget: 121,
@@ -63,6 +63,7 @@ app.get("/api/riderhistory", (req, res, next) => {
 })
 
 app.get("/api/pickup", (req, res, next) => {
+  console.log(req.query)
   res.json({
     order_id:"ORA2011-667",
     customer_name:"Raazia Jaffery",
@@ -138,10 +139,8 @@ app.get("/api/pickup", (req, res, next) => {
       }
   })
 });
-
-
 app.get("/api/pickup/washfold", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.send(
     [
         {
@@ -221,7 +220,7 @@ app.get("/api/pickup/washfold", (req, res, next) => {
 });
 
 app.get("/api/pickup/washiron", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.send(
     [
         {
@@ -301,7 +300,7 @@ app.get("/api/pickup/washiron", (req, res, next) => {
 });
 
 app.get("/api/pickup/irononly", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.send(
     [
         {
@@ -382,7 +381,7 @@ app.get("/api/pickup/irononly", (req, res, next) => {
 
 
 app.get("/api/pickup/ironhanger", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.send(
     [
         {
@@ -463,7 +462,7 @@ app.get("/api/pickup/ironhanger", (req, res, next) => {
 
 
 app.get("/api/pickup/washironhanger", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.send(
     [
         {
@@ -544,7 +543,7 @@ app.get("/api/pickup/washironhanger", (req, res, next) => {
 
 
 app.get("/api/pickup/drycleaning", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.send(
     [
         {
@@ -624,6 +623,7 @@ app.get("/api/pickup/drycleaning", (req, res, next) => {
 });
 
 app.get("/api/dropoff", (req, res, next) => {
+  console.log(req.query)
   res.json({
     order_id:"1",
     order_name:"ORA2011-667-Raazia Jaffery",
@@ -669,12 +669,19 @@ app.get("/api/dropoff", (req, res, next) => {
   })
 });
 
+app.post("/api/payment", (req, res, next) => {
+  console.log(req.body)
+  res.json({
+    status:"success",
+  })
+});
+
 app.get("/api/myrides", (req, res, next) => {
-  // console.log(req)
+  console.log(req.query)
   res.send(
     [
       {
-      order_id:"4",
+      order_id:"1",
       order_name:"OR2011-667",
       customer_name:"Raazia Jaffery",
       title: "OR2011-667-Raazia Jaffery",
@@ -687,7 +694,7 @@ app.get("/api/myrides", (req, res, next) => {
       buttonService:"Pickup"
     },
     {
-      order_id:"3",
+      order_id:"2",
       order_name:"OR2011-668",
       customer_name:"Shameel Uddin",
       title: "OR2011-668-Shameel Uddin",
@@ -702,7 +709,7 @@ app.get("/api/myrides", (req, res, next) => {
     },
 
     {
-      order_id:"1",
+      order_id:"3",
       order_name:"OR2011-669",
       customer_name:"Babar",
       title: "OR2011-669-Babar",
@@ -720,7 +727,7 @@ app.get("/api/myrides", (req, res, next) => {
       time:"11:30 AM"
     },
     {
-      order_id:"44",
+      order_id:"4",
       order_name:"OR2011-667",
       customer_name:"Fahad",
       title: "OR2011-667-Fahad",
@@ -733,7 +740,7 @@ app.get("/api/myrides", (req, res, next) => {
       buttonService:"Pickup"
     },
     {
-      order_id:"2",
+      order_id:"5",
       order_name:"OR2011-661",
       customer_name:"Uzair",
       title: "OR2011-661-Uzair",
