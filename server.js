@@ -139,6 +139,7 @@ app.get("/api/pickup", (req, res, next) => {
       }
   })
 });
+
 app.get("/api/pickup/washfold", (req, res, next) => {
   console.log(req.query)
   res.send(
@@ -715,8 +716,8 @@ app.post("/api/payment", (req, res, next) => {
       order_id:"ORA2011-669",
       customer_name:"Babar",
       order:"ORA2011-669-Babar",
-      PermenantNot:"Don't Ring Bell",
-      Note:"Wash Properly",
+      PermenantNote:"Don't Ring Bell",
+      Note:"Wash Properly With Surf",
       Services:[
         {
           service_id:1,
@@ -866,6 +867,89 @@ app.get("/api/myrides", (req, res, next) => {
     }
   ]
   )
+});
+
+//this is for internal screen submission
+app.post("/api/confirmpickupservice", (req, res, next) => {
+  console.log(req.body)
+  // for (let key in req.body.items_selected) {
+  //   console.log(req.body.items_selected[key])
+  // }
+  res.json({
+    status:"success"
+  })
+})
+
+//this is for final submission of pickup order
+app.post("/api/confirmpickup", (req, res, next) => {
+  console.log(req.body)
+  res.json({
+    status:"success"
+  })
+})
+
+
+app.get("/api/cancel", (req, res, next) => {
+res.json({
+  reason:["Reason 1", "Reason 2", "Reason 2", "Other"]
+})
+})
+
+app.get("/api/addanotherorder", (req, res, next) => {
+  console.log(req.query)
+  res.json({
+    order_id:"ORA2011-667",
+    customer_name:"Raazia Jaffery",
+    order:"ORA2011-667-Raazia Jaffery",
+    PermenantNote:"Don't Ring Bell",
+    Note:"Wash Properly",
+    Services:[
+      {
+        service_id:1,
+        service_name:"Wash & Fold",
+        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Fold.png",
+        service_link:"api/pickup/washfold",
+        service_selected:false
+      },
+      {
+        service_id:2,
+        service_name:"Wash & Iron",
+        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Iron.png",
+        service_link:"api/pickup/washiron",
+        service_selected:false
+      }
+      ,
+      {
+        service_id:3,
+        service_name:"Iron Only",
+        service_image:"http://dev.geeksroot.com/washup_images/Iron%20Only.png",
+        service_link:"api/pickup/irononly",
+        service_selected:false
+      },
+      {
+        service_id:4,
+        service_name:"Iron & Hanger",
+        service_image:"http://dev.geeksroot.com/washup_images/Iron%20and%20Hanger.png",
+        service_link:"api/pickup/ironhanger",
+        service_selected:false
+      },
+      {
+        service_id:5,
+        service_name:"Wash, Iron & Hanger",
+        service_image:"http://dev.geeksroot.com/washup_images/Wash%20Iron%20&.png",
+        service_link:"api/pickup/washironhanger",
+        service_selected:false
+      }
+      ,
+      {
+        service_id:6,
+        service_name:"Dry Cleaning",
+        service_image:"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
+        service_link:"api/pickup/drycleaning",
+        service_selected:false
+      }
+    ]
+  })
 });
 
 app.post("/api/login", (req, res, next) => {
