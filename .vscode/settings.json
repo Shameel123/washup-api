@@ -1,5 +1,5 @@
 {
     "appService.showBuildDuringDeployPrompt": false,
-    "appService.defaultWebAppToDeploy": "/subscriptions/22fcbe9b-cfd6-48df-ab07-569915c5ef7f/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/washupapi",
-    "appService.deploySubpath": "."
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/0b94df11-d965-4e87-b61e-2097cde3b6f2/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/washupapiagain"
 }

@@ -39,7 +39,7 @@ app.get("/api/dashboard", (req, res, next) => {
     dropAchieved:2,
     onTimeTarget:20,
     onTimeAchieved:8,
-    profilePic:"http://geeksroot.com/dev/washup_images/profilepic2.png",
+    profilePic:"https://dev.geeksroot.tech/washup/images/profile_pic.png",
     profileName:"Shameel"
   })
 });
@@ -74,14 +74,14 @@ app.get("/api/pickup", (req, res, next) => {
       {
         service_id:1,
         service_name:"Wash & Fold",
-        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Fold.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/5.png",
         service_link:"api/pickup/washfold",
         service_selected:true
       },
       {
         service_id:2,
         service_name:"Wash & Iron",
-        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Iron.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/6.png",
         service_link:"api/pickup/washiron",
         service_selected:false
       }
@@ -89,21 +89,21 @@ app.get("/api/pickup", (req, res, next) => {
       {
         service_id:3,
         service_name:"Iron Only",
-        service_image:"http://dev.geeksroot.com/washup_images/Iron%20Only.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/4.png",
         service_link:"api/pickup/irononly",
         service_selected:true
       },
       {
         service_id:4,
         service_name:"Iron & Hanger",
-        service_image:"http://dev.geeksroot.com/washup_images/Iron%20and%20Hanger.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/3.png",
         service_link:"api/pickup/ironhanger",
         service_selected:false
       },
       {
         service_id:5,
         service_name:"Wash, Iron & Hanger",
-        service_image:"http://dev.geeksroot.com/washup_images/Wash%20Iron%20&.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/1.png",
         service_link:"api/pickup/washironhanger",
         service_selected:false
       }
@@ -111,7 +111,7 @@ app.get("/api/pickup", (req, res, next) => {
       {
         service_id:6,
         service_name:"Dry Cleaning",
-        service_image:"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/2.png",
         service_link:"api/pickup/drycleaning",
         service_selected:false
       }
@@ -147,73 +147,28 @@ app.get("/api/pickup/washfold", (req, res, next) => {
         {
           id:4,
           title: "Shirt",
-	  quantity:"5",
-          addons: [
-            {id: 1, name: 'Shirt angellist',selected:false},
-            {id: 2, name: 'Shirt codepen',selected:false},
-            {id: 3, name: 'Shirt envelope',selected:false},
-            {id: 4, name: 'Shirt etsy',selected:false},
-            {id: 5, name: 'Shirt facebook',selected:false},
-            {id: 6, name: 'Shirt foursquare',selected:false},  
-            {id: 7, name: 'Shirt github-alt',selected:false},
-            {id: 8, name: 'Shirt github',selected:false},
-            {id: 9, name: 'Shirt gitlab',selected:false},
-            {id: 10, name: 'Shirt instagram',selected:false},
-          ]
+	  quantity:"5"
 
         },
         {
           id:3,
           title: "Pent",
 	  quantity:"4",
-          addons: [
-            {id: 1, name: 'Pent angellist',selected:false},
-            {id: 2, name: 'Pent codepen',selected:false},
-            {id: 3, name: 'Pent envelope',selected:false},
-            {id: 4, name: 'Pent etsy',selected:false},
-            {id: 5, name: 'Pent facebook',selected:false},
-            {id: 6, name: 'Pent foursquare',selected:false},  
-            {id: 7, name: 'Pent github-alt',selected:false},
-            {id: 8, name: 'Pent github',selected:false},
-            {id: 9, name: 'Pent gitlab',selected:false},
-            {id: 10, name: 'Pent instagram',selected:false},
-          ]
+          
         },
         
         {
           id:1,
           title: "Cap",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'cap angellist',selected:false},
-            {id: 2, name: 'cap codepen',selected:false},
-            {id: 3, name: 'cap envelope',selected:false},
-            {id: 4, name: 'cap etsy',selected:false},
-            {id: 5, name: 'cap facebook',selected:false},
-            {id: 6, name: 'cap foursquare',selected:false},  
-            {id: 7, name: 'cap github-alt',selected:false},
-            {id: 8, name: 'cap github',selected:false},
-            {id: 9, name: 'cap gitlab',selected:false},
-            {id: 10, name: 'cap instagram',selected:false},
-          ]
+          
           
         },
         {
           id:9,
           title: "Kurta",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Kurta angellist',selected:false},
-            {id: 2, name: 'Kurta codepen',selected:false},
-            {id: 3, name: 'Kurta envelope',selected:false},
-            {id: 4, name: 'Kurta etsy',selected:false},
-            {id: 5, name: 'Kurta facebook',selected:false},
-            {id: 6, name: 'Kurta foursquare',selected:false},  
-            {id: 7, name: 'Kurta github-alt',selected:false},
-            {id: 8, name: 'Kurta github',selected:false},
-            {id: 9, name: 'Kurta gitlab',selected:false},
-            {id: 10, name: 'Kurta instagram',selected:false},
-          ]
+          
           
         }
   ]
@@ -228,72 +183,28 @@ app.get("/api/pickup/washiron", (req, res, next) => {
           id:4,
           title: "Shirt",
 	  quantity:"2",
-          addons: [
-            {id: 1, name: 'Shirt angellist',selected:false},
-            {id: 2, name: 'Shirt codepen',selected:false},
-            {id: 3, name: 'Shirt envelope',selected:false},
-            {id: 4, name: 'Shirt etsy',selected:false},
-            {id: 5, name: 'Shirt facebook',selected:false},
-            {id: 6, name: 'Shirt foursquare',selected:false},  
-            {id: 7, name: 'Shirt github-alt',selected:false},
-            {id: 8, name: 'Shirt github',selected:false},
-            {id: 9, name: 'Shirt gitlab',selected:false},
-            {id: 10, name: 'Shirt instagram',selected:false},
-          ]
+          
 
         },
         {
           id:3,
           title: "Pent",
 	  quantity:"3",
-          addons: [
-            {id: 1, name: 'Pent angellist',selected:false},
-            {id: 2, name: 'Pent codepen',selected:false},
-            {id: 3, name: 'Pent envelope',selected:false},
-            {id: 4, name: 'Pent etsy',selected:false},
-            {id: 5, name: 'Pent facebook',selected:false},
-            {id: 6, name: 'Pent foursquare',selected:false},  
-            {id: 7, name: 'Pent github-alt',selected:false},
-            {id: 8, name: 'Pent github',selected:false},
-            {id: 9, name: 'Pent gitlab',selected:false},
-            {id: 10, name: 'Pent instagram',selected:false},
-          ]
+          
         },
         
         {
           id:5,
           title: "Cap",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'cap angellist',selected:false},
-            {id: 2, name: 'cap codepen',selected:false},
-            {id: 3, name: 'cap envelope',selected:false},
-            {id: 4, name: 'cap etsy',selected:false},
-            {id: 5, name: 'cap facebook',selected:false},
-            {id: 6, name: 'cap foursquare',selected:false},  
-            {id: 7, name: 'cap github-alt',selected:false},
-            {id: 8, name: 'cap github',selected:false},
-            {id: 9, name: 'cap gitlab',selected:false},
-            {id: 10, name: 'cap instagram',selected:false},
-          ]
+          
           
         },
         {
           id:9,
           title: "Kurta",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Kurta angellist',selected:false},
-            {id: 2, name: 'Kurta codepen',selected:false},
-            {id: 3, name: 'Kurta envelope',selected:false},
-            {id: 4, name: 'Kurta etsy',selected:false},
-            {id: 5, name: 'Kurta facebook',selected:false},
-            {id: 6, name: 'Kurta foursquare',selected:false},  
-            {id: 7, name: 'Kurta github-alt',selected:false},
-            {id: 8, name: 'Kurta github',selected:false},
-            {id: 9, name: 'Kurta gitlab',selected:false},
-            {id: 10, name: 'Kurta instagram',selected:false},
-          ]
+          
           
         }
   ]
@@ -308,72 +219,28 @@ app.get("/api/pickup/irononly", (req, res, next) => {
           id:1,
           title: "Shirt",
 	        quantity:"5",
-          addons: [
-            {id: 1, name: 'Shirt angellist',selected:false},
-            {id: 2, name: 'Shirt codepen',selected:false},
-            {id: 3, name: 'Shirt envelope',selected:false},
-            {id: 4, name: 'Shirt etsy',selected:false},
-            {id: 5, name: 'Shirt facebook',selected:false},
-            {id: 6, name: 'Shirt foursquare',selected:false},  
-            {id: 7, name: 'Shirt github-alt',selected:false},
-            {id: 8, name: 'Shirt github',selected:false},
-            {id: 9, name: 'Shirt gitlab',selected:false},
-            {id: 10, name: 'Shirt instagram',selected:false},
-          ]
+          
 
         },
         {
           id:3,
           title: "Pent",
 	  quantity:"5",
-          addons: [
-            {id: 1, name: 'Pent angellist',selected:false},
-            {id: 2, name: 'Pent codepen',selected:false},
-            {id: 3, name: 'Pent envelope',selected:false},
-            {id: 4, name: 'Pent etsy',selected:false},
-            {id: 5, name: 'Pent facebook',selected:false},
-            {id: 6, name: 'Pent foursquare',selected:false},  
-            {id: 7, name: 'Pent github-alt',selected:false},
-            {id: 8, name: 'Pent github',selected:false},
-            {id: 9, name: 'Pent gitlab',selected:false},
-            {id: 10, name: 'Pent instagram',selected:false},
-          ]
+          
         },
         
         {
           id:5,
           title: "Cap",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'cap angellist',selected:false},
-            {id: 2, name: 'cap codepen',selected:false},
-            {id: 3, name: 'cap envelope',selected:false},
-            {id: 4, name: 'cap etsy',selected:false},
-            {id: 5, name: 'cap facebook',selected:false},
-            {id: 6, name: 'cap foursquare',selected:false},  
-            {id: 7, name: 'cap github-alt',selected:false},
-            {id: 8, name: 'cap github',selected:false},
-            {id: 9, name: 'cap gitlab',selected:false},
-            {id: 10, name: 'cap instagram',selected:false},
-          ]
+          
           
         },
         {
           id:9,
           title: "Kurta",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Kurta angellist',selected:false},
-            {id: 2, name: 'Kurta codepen',selected:false},
-            {id: 3, name: 'Kurta envelope',selected:false},
-            {id: 4, name: 'Kurta etsy',selected:false},
-            {id: 5, name: 'Kurta facebook',selected:false},
-            {id: 6, name: 'Kurta foursquare',selected:false},  
-            {id: 7, name: 'Kurta github-alt',selected:false},
-            {id: 8, name: 'Kurta github',selected:false},
-            {id: 9, name: 'Kurta gitlab',selected:false},
-            {id: 10, name: 'Kurta instagram',selected:false},
-          ]
+          
           
         }
   ]
@@ -389,72 +256,28 @@ app.get("/api/pickup/ironhanger", (req, res, next) => {
           id:4,
           title: "Shirt",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Shirt angellist',selected:false},
-            {id: 2, name: 'Shirt codepen',selected:false},
-            {id: 3, name: 'Shirt envelope',selected:false},
-            {id: 4, name: 'Shirt etsy',selected:false},
-            {id: 5, name: 'Shirt facebook',selected:false},
-            {id: 6, name: 'Shirt foursquare',selected:false},  
-            {id: 7, name: 'Shirt github-alt',selected:false},
-            {id: 8, name: 'Shirt github',selected:false},
-            {id: 9, name: 'Shirt gitlab',selected:false},
-            {id: 10, name: 'Shirt instagram',selected:false},
-          ]
+         
 
         },
         {
           id:3,
           title: "Pent",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Pent angellist',selected:false},
-            {id: 2, name: 'Pent codepen',selected:false},
-            {id: 3, name: 'Pent envelope',selected:false},
-            {id: 4, name: 'Pent etsy',selected:false},
-            {id: 5, name: 'Pent facebook',selected:false},
-            {id: 6, name: 'Pent foursquare',selected:false},  
-            {id: 7, name: 'Pent github-alt',selected:false},
-            {id: 8, name: 'Pent github',selected:false},
-            {id: 9, name: 'Pent gitlab',selected:false},
-            {id: 10, name: 'Pent instagram',selected:false},
-          ]
+          
         },
         
         {
           id:5,
           title: "Cap",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'cap angellist',selected:false},
-            {id: 2, name: 'cap codepen',selected:false},
-            {id: 3, name: 'cap envelope',selected:false},
-            {id: 4, name: 'cap etsy',selected:false},
-            {id: 5, name: 'cap facebook',selected:false},
-            {id: 6, name: 'cap foursquare',selected:false},  
-            {id: 7, name: 'cap github-alt',selected:false},
-            {id: 8, name: 'cap github',selected:false},
-            {id: 9, name: 'cap gitlab',selected:false},
-            {id: 10, name: 'cap instagram',selected:false},
-          ]
+          
           
         },
         {
           id:9,
           title: "Kurta",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Kurta angellist',selected:false},
-            {id: 2, name: 'Kurta codepen',selected:false},
-            {id: 3, name: 'Kurta envelope',selected:false},
-            {id: 4, name: 'Kurta etsy',selected:false},
-            {id: 5, name: 'Kurta facebook',selected:false},
-            {id: 6, name: 'Kurta foursquare',selected:false},  
-            {id: 7, name: 'Kurta github-alt',selected:false},
-            {id: 8, name: 'Kurta github',selected:false},
-            {id: 9, name: 'Kurta gitlab',selected:false},
-            {id: 10, name: 'Kurta instagram',selected:false},
-          ]
+          
           
         }
   ]
@@ -470,72 +293,28 @@ app.get("/api/pickup/washironhanger", (req, res, next) => {
           id:4,
           title: "Shirt",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Shirt angellist',selected:false},
-            {id: 2, name: 'Shirt codepen',selected:false},
-            {id: 3, name: 'Shirt envelope',selected:false},
-            {id: 4, name: 'Shirt etsy',selected:false},
-            {id: 5, name: 'Shirt facebook',selected:false},
-            {id: 6, name: 'Shirt foursquare',selected:false},  
-            {id: 7, name: 'Shirt github-alt',selected:false},
-            {id: 8, name: 'Shirt github',selected:false},
-            {id: 9, name: 'Shirt gitlab',selected:false},
-            {id: 10, name: 'Shirt instagram',selected:false},
-          ]
+         
 
         },
         {
           id:3,
           title: "Pent",
 	  quantity:"4",
-          addons: [
-            {id: 1, name: 'Pent angellist',selected:false},
-            {id: 2, name: 'Pent codepen',selected:false},
-            {id: 3, name: 'Pent envelope',selected:false},
-            {id: 4, name: 'Pent etsy',selected:false},
-            {id: 5, name: 'Pent facebook',selected:false},
-            {id: 6, name: 'Pent foursquare',selected:false},  
-            {id: 7, name: 'Pent github-alt',selected:false},
-            {id: 8, name: 'Pent github',selected:false},
-            {id: 9, name: 'Pent gitlab',selected:false},
-            {id: 10, name: 'Pent instagram',selected:false},
-          ]
+          
         },
         
         {
           id:5,
           title: "Cap",
 	  quantity:"7",
-          addons: [
-            {id: 1, name: 'cap angellist',selected:false},
-            {id: 2, name: 'cap codepen',selected:false},
-            {id: 3, name: 'cap envelope',selected:false},
-            {id: 4, name: 'cap etsy',selected:false},
-            {id: 5, name: 'cap facebook',selected:false},
-            {id: 6, name: 'cap foursquare',selected:false},  
-            {id: 7, name: 'cap github-alt',selected:false},
-            {id: 8, name: 'cap github',selected:false},
-            {id: 9, name: 'cap gitlab',selected:false},
-            {id: 10, name: 'cap instagram',selected:false},
-          ]
+         
           
         },
         {
           id:9,
           title: "Kurta",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Kurta angellist',selected:false},
-            {id: 2, name: 'Kurta codepen',selected:false},
-            {id: 3, name: 'Kurta envelope',selected:false},
-            {id: 4, name: 'Kurta etsy',selected:false},
-            {id: 5, name: 'Kurta facebook',selected:false},
-            {id: 6, name: 'Kurta foursquare',selected:false},  
-            {id: 7, name: 'Kurta github-alt',selected:false},
-            {id: 8, name: 'Kurta github',selected:false},
-            {id: 9, name: 'Kurta gitlab',selected:false},
-            {id: 10, name: 'Kurta instagram',selected:false},
-          ]
+         
           
         }
   ]
@@ -551,72 +330,28 @@ app.get("/api/pickup/drycleaning", (req, res, next) => {
           id:4,
           title: "Shirt",
 	  quantity:"1",
-          addons: [
-            {id: 1, name: 'Shirt angellist',selected:false},
-            {id: 2, name: 'Shirt codepen',selected:false},
-            {id: 3, name: 'Shirt envelope',selected:false},
-            {id: 4, name: 'Shirt etsy',selected:false},
-            {id: 5, name: 'Shirt facebook',selected:false},
-            {id: 6, name: 'Shirt foursquare',selected:false},  
-            {id: 7, name: 'Shirt github-alt',selected:false},
-            {id: 8, name: 'Shirt github',selected:false},
-            {id: 9, name: 'Shirt gitlab',selected:false},
-            {id: 10, name: 'Shirt instagram',selected:false},
-          ]
+          
 
         },
         {
           id:3,
           title: "Pent",
 	  quantity:"4",
-          addons: [
-            {id: 1, name: 'Pent angellist',selected:false},
-            {id: 2, name: 'Pent codepen',selected:false},
-            {id: 3, name: 'Pent envelope',selected:false},
-            {id: 4, name: 'Pent etsy',selected:false},
-            {id: 5, name: 'Pent facebook',selected:false},
-            {id: 6, name: 'Pent foursquare',selected:false},  
-            {id: 7, name: 'Pent github-alt',selected:false},
-            {id: 8, name: 'Pent github',selected:false},
-            {id: 9, name: 'Pent gitlab',selected:false},
-            {id: 10, name: 'Pent instagram',selected:false},
-          ]
+          
         },
         
         {
           id:5,
           title: "Cap",
 	  quantity:"6",
-          addons: [
-            {id: 1, name: 'cap angellist',selected:false},
-            {id: 2, name: 'cap codepen',selected:false},
-            {id: 3, name: 'cap envelope',selected:false},
-            {id: 4, name: 'cap etsy',selected:false},
-            {id: 5, name: 'cap facebook',selected:false},
-            {id: 6, name: 'cap foursquare',selected:false},  
-            {id: 7, name: 'cap github-alt',selected:false},
-            {id: 8, name: 'cap github',selected:false},
-            {id: 9, name: 'cap gitlab',selected:false},
-            {id: 10, name: 'cap instagram',selected:false},
-          ]
+          
           
         },
         {
           id:9,
           title: "Kurta",
 	  quantity:"0",
-          addons: [
-            {id: 1, name: 'Kurta angellist',selected:false},
-            {id: 2, name: 'Kurta codepen',selected:false},
-            {id: 3, name: 'Kurta envelope',selected:false},
-            {id: 4, name: 'Kurta etsy',selected:false},
-            {id: 5, name: 'Kurta facebook',selected:false},
-            {id: 6, name: 'Kurta foursquare',selected:false},  
-            {id: 7, name: 'Kurta github-alt',selected:false},
-            {id: 8, name: 'Kurta github',selected:false},
-            {id: 9, name: 'Kurta gitlab',selected:false},
-            {id: 10, name: 'Kurta instagram',selected:false},
-          ]
+          
           
         }
   ]
@@ -722,14 +457,14 @@ app.post("/api/payment", (req, res, next) => {
         {
           service_id:1,
           service_name:"Wash & Fold",
-          service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Fold.png",
+          service_image:"https://dev.geeksroot.tech/washup/images/5.png",
           service_link:"api/pickup/washfold",
           service_selected:true
         },
         {
           service_id:2,
           service_name:"Wash & Iron",
-          service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Iron.png",
+          service_image:"https://dev.geeksroot.tech/washup/images/6.png",
           service_link:"api/pickup/washiron",
           service_selected:false
         }
@@ -737,21 +472,21 @@ app.post("/api/payment", (req, res, next) => {
         {
           service_id:3,
           service_name:"Iron Only",
-          service_image:"http://dev.geeksroot.com/washup_images/Iron%20Only.png",
+          service_image:"https://dev.geeksroot.tech/washup/images/4.png",
           service_link:"api/pickup/irononly",
           service_selected:true
         },
         {
           service_id:4,
           service_name:"Iron & Hanger",
-          service_image:"http://dev.geeksroot.com/washup_images/Iron%20and%20Hanger.png",
+          service_image:"https://dev.geeksroot.tech/washup/images/3.png",
           service_link:"api/pickup/ironhanger",
           service_selected:false
         },
         {
           service_id:5,
           service_name:"Wash, Iron & Hanger",
-          service_image:"http://dev.geeksroot.com/washup_images/Wash%20Iron%20&.png",
+          service_image:"https://dev.geeksroot.tech/washup/images/1.png",
           service_link:"api/pickup/washironhanger",
           service_selected:false
         }
@@ -759,7 +494,7 @@ app.post("/api/payment", (req, res, next) => {
         {
           service_id:6,
           service_name:"Dry Cleaning",
-          service_image:"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
+          service_image:"https://dev.geeksroot.tech/washup/images/2.png",
           service_link:"api/pickup/drycleaning",
           service_selected:false
         }
@@ -802,7 +537,7 @@ app.get("/api/myrides", (req, res, next) => {
       rideTime:"10:00 AM",
       permenantNote: "None",
       note: "None",
-      buttonCall:"03443544593",
+      buttonCall:"0322323232",
       buttonMap:"25.370445770292076, 68.38596516440376",
       buttonService:"Pickup"
     },
@@ -815,7 +550,7 @@ app.get("/api/myrides", (req, res, next) => {
       rideTime:"11:00 AM",
       permenantNote: "None",
       note: "None",
-      buttonCall:"03443544593",
+      buttonCall:"031111111",
       buttonMap:"25.363731617932636, 68.38157283400915",
       buttonService:"Drop Off",
       serviceQuantity:"8" 
@@ -830,7 +565,7 @@ app.get("/api/myrides", (req, res, next) => {
       rideTime:"12:00 pM",
       permenantNote: "None",
       note: "None",
-      buttonCall:"03443544593",
+      buttonCall:"031234569",
       buttonMap:"25.370448839163974, 68.33198880580466",
       buttonService:"Pick & Drop",
       serviceQuantity:"5"
@@ -848,7 +583,7 @@ app.get("/api/myrides", (req, res, next) => {
       rideTime:"10:00 AM",
       permenantNote: "None",
       note: "None",
-      buttonCall:"03443544593",
+      buttonCall:"03489231696",
       buttonMap:"25.370445770292076, 68.38596516440376",
       buttonService:"Pickup"
     },
@@ -861,10 +596,153 @@ app.get("/api/myrides", (req, res, next) => {
       rideTime:"1:00 PM",
       permenantNote: "None",
       note: "None",
-      buttonCall:"03443544593",
+      buttonCall:"03894468456",
       buttonMap:"25.37005755496534, 68.33227750465883",
       buttonService:"To Be Packed"
     }
+  ]
+  )
+});
+app.post("/api/paymentonlyridessubmit", (req, res, next) => {
+  console.log(req.body)
+  // for (let key in req.body.items_selected) {
+  //   console.log(req.body.items_selected[key])
+  // }
+  res.json({
+    status:"success",
+    data:[
+      {
+      order_id:"1",
+      order_name:"OR2011-667",
+      customer_name:"Raazia Jaffery",
+      title: "OR2011-667-Raazia Jaffery",
+      address:"Latifabad",
+      rideTime:"10:00 AM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"0398654213",
+      buttonMap:"25.370445770292076, 68.38596516440376",
+      buttonService:"Payment",
+      cash:'1000'
+    },
+    {
+      order_id:"2",
+      order_name:"OR2011-668",
+      customer_name:"Shameel Uddin",
+      title: "OR2011-668-Shameel Uddin",
+      address:"Latifabad",
+      rideTime:"11:00 AM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"03221465165",
+      buttonMap:"25.363731617932636, 68.38157283400915",
+      buttonService:"Payment",
+      cash:'4000'
+    },
+
+    {
+      order_id:"3",
+      order_name:"OR2011-669",
+      customer_name:"Babar",
+      title: "OR2011-669-Babar",
+      address:"Latifabad",
+      rideTime:"12:00 pM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"032156431656",
+      buttonMap:"25.370448839163974, 68.33198880580466",
+      buttonService:"Payment" ,
+      cash:'600'
+    },{
+      order_id:"0",
+      title: "Drop Off Point",
+      time:"11:30 AM"
+    },
+    {
+      order_id:"4",
+      order_name:"OR2011-667",
+      customer_name:"Fahad",
+      title: "OR2011-667-Fahad",
+      address:"Latifabad",
+      rideTime:"10:00 AM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"0313165132",
+      buttonMap:"25.370445770292076, 68.38596516440376",
+      buttonService:"Payment",
+      cash:'9000',
+        },
+  ]
+  })
+})
+
+
+app.get("/api/paymentonlyrides", (req, res, next) => {
+  console.log(req.query)
+  res.send(
+    [
+      {
+      order_id:"1",
+      order_name:"OR2011-667",
+      customer_name:"Raazia Jaffery",
+      title: "OR2011-667-Raazia Jaffery",
+      address:"Latifabad",
+      rideTime:"10:00 AM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"0398654213",
+      buttonMap:"25.370445770292076, 68.38596516440376",
+      buttonService:"Payment",
+      cash:'1000'
+    },
+    {
+      order_id:"2",
+      order_name:"OR2011-668",
+      customer_name:"Shameel Uddin",
+      title: "OR2011-668-Shameel Uddin",
+      address:"Latifabad",
+      rideTime:"11:00 AM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"03221465165",
+      buttonMap:"25.363731617932636, 68.38157283400915",
+      buttonService:"Payment",
+      cash:'4000'
+    },
+
+    {
+      order_id:"3",
+      order_name:"OR2011-669",
+      customer_name:"Babar",
+      title: "OR2011-669-Babar",
+      address:"Latifabad",
+      rideTime:"12:00 pM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"032156431656",
+      buttonMap:"25.370448839163974, 68.33198880580466",
+      buttonService:"Payment" ,
+      cash:'600'
+    },{
+      order_id:"0",
+      title: "Drop Off Point",
+      time:"11:30 AM"
+    },
+    {
+      order_id:"4",
+      order_name:"OR2011-667",
+      customer_name:"Fahad",
+      title: "OR2011-667-Fahad",
+      address:"Latifabad",
+      rideTime:"10:00 AM",
+      permenantNote: "None",
+      note: "None",
+      buttonCall:"0313165132",
+      buttonMap:"25.370445770292076, 68.38596516440376",
+      buttonService:"Payment",
+      cash:'9000',
+
+        },
   ]
   )
 });
@@ -907,14 +785,14 @@ app.get("/api/addanotherorder", (req, res, next) => {
       {
         service_id:1,
         service_name:"Wash & Fold",
-        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Fold.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/5.png",
         service_link:"api/pickup/washfold",
         service_selected:false
       },
       {
         service_id:2,
         service_name:"Wash & Iron",
-        service_image:"http://dev.geeksroot.com/washup_images/Wash%20and%20Iron.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/6.png",
         service_link:"api/pickup/washiron",
         service_selected:false
       }
@@ -922,21 +800,21 @@ app.get("/api/addanotherorder", (req, res, next) => {
       {
         service_id:3,
         service_name:"Iron Only",
-        service_image:"http://dev.geeksroot.com/washup_images/Iron%20Only.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/4.png",
         service_link:"api/pickup/irononly",
         service_selected:false
       },
       {
         service_id:4,
         service_name:"Iron & Hanger",
-        service_image:"http://dev.geeksroot.com/washup_images/Iron%20and%20Hanger.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/3.png",
         service_link:"api/pickup/ironhanger",
         service_selected:false
       },
       {
         service_id:5,
         service_name:"Wash, Iron & Hanger",
-        service_image:"http://dev.geeksroot.com/washup_images/Wash%20Iron%20&.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/1.png",
         service_link:"api/pickup/washironhanger",
         service_selected:false
       }
@@ -944,7 +822,7 @@ app.get("/api/addanotherorder", (req, res, next) => {
       {
         service_id:6,
         service_name:"Dry Cleaning",
-        service_image:"http://dev.geeksroot.com/washup_images/Dry%20Cleaning.png",
+        service_image:"https://dev.geeksroot.tech/washup/images/2.png",
         service_link:"api/pickup/drycleaning",
         service_selected:false
       }
