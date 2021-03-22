@@ -153,43 +153,27 @@ app.get("/api/pickup/washfold", (req, res, next) => {
         {
           id:4,
           title: "Shirt",
-<<<<<<< HEAD
 	        quantity:"5"
-=======
-	  quantity:"5"
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
 
         },
         {
           id:3,
           title: "Pent",
-<<<<<<< HEAD
 	        quantity:"4",
-=======
-	  quantity:"4",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
         },
         
         {
           id:1,
           title: "Cap",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         },
         {
           id:9,
           title: "Kurta",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         }
@@ -204,44 +188,28 @@ app.get("/api/pickup/washiron", (req, res, next) => {
         {
           id:4,
           title: "Shirt",
-<<<<<<< HEAD
 	        quantity:"2",
-=======
-	  quantity:"2",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
 
         },
         {
           id:3,
           title: "Pent",
-<<<<<<< HEAD
 	        quantity:"3",
-=======
-	  quantity:"3",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
         },
         
         {
           id:5,
           title: "Cap",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         },
         {
           id:9,
           title: "Kurta",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         }
@@ -263,33 +231,21 @@ app.get("/api/pickup/irononly", (req, res, next) => {
         {
           id:3,
           title: "Pent",
-<<<<<<< HEAD
 	        quantity:"5",
-=======
-	  quantity:"5",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
         },
         
         {
           id:5,
           title: "Cap",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         },
         {
           id:9,
           title: "Kurta",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         }
@@ -305,44 +261,28 @@ app.get("/api/pickup/ironhanger", (req, res, next) => {
         {
           id:4,
           title: "Shirt",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
          
 
         },
         {
           id:3,
           title: "Pent",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
         },
         
         {
           id:5,
           title: "Cap",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         },
         {
           id:9,
           title: "Kurta",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
           
         }
@@ -358,44 +298,28 @@ app.get("/api/pickup/washironhanger", (req, res, next) => {
         {
           id:4,
           title: "Shirt",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
          
 
         },
         {
           id:3,
           title: "Pent",
-<<<<<<< HEAD
 	        quantity:"4",
-=======
-	  quantity:"4",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
           
         },
         
         {
           id:5,
           title: "Cap",
-<<<<<<< HEAD
 	        quantity:"7",
-=======
-	  quantity:"7",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
          
           
         },
         {
           id:9,
           title: "Kurta",
-<<<<<<< HEAD
 	        quantity:"0",
-=======
-	  quantity:"0",
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
          
           
         }
@@ -693,42 +617,19 @@ app.get("/api/myrides", (req, res, next) => {
 });
 app.post("/api/paymentonlyridessubmit", (req, res, next) => {
   console.log(req.body)
-<<<<<<< HEAD
   // console.log(req)
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
   // for (let key in req.body.items_selected) {
   //   console.log(req.body.items_selected[key])
   // }
   res.json({
     status:"success",
     data:[
-<<<<<<< HEAD
       
-=======
-      {
-      order_id:"1",
-      order_name:"OR2011-667",
-      customer_name:"Raazia Jaffery",
-      title: "OR2011-667-Raazia Jaffery",
-      address:"Latifabad",
-      rideTime:"10:00 AM",
-      permenantNote: "None",
-      note: "None",
-      buttonCall:"0398654213",
-      buttonMap:"25.370445770292076, 68.38596516440376",
-      buttonService:"Payment",
-      cash:'1000'
-    },
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
     {
       order_id:"2",
       order_name:"OR2011-668",
       customer_name:"Shameel Uddin",
-<<<<<<< HEAD
       customer_id:"2",
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
       title: "OR2011-668-Shameel Uddin",
       address:"Latifabad",
       rideTime:"11:00 AM",
@@ -744,10 +645,7 @@ app.post("/api/paymentonlyridessubmit", (req, res, next) => {
       order_id:"3",
       order_name:"OR2011-669",
       customer_name:"Babar",
-<<<<<<< HEAD
       customer_id:"3",
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
       title: "OR2011-669-Babar",
       address:"Latifabad",
       rideTime:"12:00 pM",
@@ -766,10 +664,7 @@ app.post("/api/paymentonlyridessubmit", (req, res, next) => {
       order_id:"4",
       order_name:"OR2011-667",
       customer_name:"Fahad",
-<<<<<<< HEAD
       customer_id:"4",
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
       title: "OR2011-667-Fahad",
       address:"Latifabad",
       rideTime:"10:00 AM",
@@ -793,10 +688,7 @@ app.get("/api/paymentonlyrides", (req, res, next) => {
       order_id:"1",
       order_name:"OR2011-667",
       customer_name:"Raazia Jaffery",
-<<<<<<< HEAD
       customer_id:"1",
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
       title: "OR2011-667-Raazia Jaffery",
       address:"Latifabad",
       rideTime:"10:00 AM",
@@ -811,10 +703,7 @@ app.get("/api/paymentonlyrides", (req, res, next) => {
       order_id:"2",
       order_name:"OR2011-668",
       customer_name:"Shameel Uddin",
-<<<<<<< HEAD
       customer_id:"2",
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
       title: "OR2011-668-Shameel Uddin",
       address:"Latifabad",
       rideTime:"11:00 AM",
@@ -830,10 +719,7 @@ app.get("/api/paymentonlyrides", (req, res, next) => {
       order_id:"3",
       order_name:"OR2011-669",
       customer_name:"Babar",
-<<<<<<< HEAD
       customer_id:"3",
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
       title: "OR2011-669-Babar",
       address:"Latifabad",
       rideTime:"12:00 pM",
@@ -852,10 +738,7 @@ app.get("/api/paymentonlyrides", (req, res, next) => {
       order_id:"4",
       order_name:"OR2011-667",
       customer_name:"Fahad",
-<<<<<<< HEAD
       customer_id:"4",
-=======
->>>>>>> 313d57d3c2b612cf7f8fbf24eb3ff4b3fad701a4
       title: "OR2011-667-Fahad",
       address:"Latifabad",
       rideTime:"10:00 AM",
